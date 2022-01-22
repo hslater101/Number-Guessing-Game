@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+.main-header {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 5rem;
+  letter-spacing: 3px;
+  font-family: Roboto;
+  color: white;
+  padding-bottom: 5rem;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2rem;
+  line-height: 3.5rem;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  align-self: center;
+  height: 22rem;
+}
+.header-text {
+  text-align: left;
+  border-radius: 5px;
+}
+.good-luck-p {
+  text-align: center;
+}
+.header-text-2 {
+  text-align: left;
+}
+.header-text-2-pg {
+  text-align: center;
+}
+.main-div {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.game-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 45rem;
+}
+.label-style {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: scale(1.3);
+  transition-property: transform;
+  transition-duration: 0.1s;
+  font-size: 2rem;
+}
+.input-style {
+  border-radius: 1px;
+  transform: scale(1.4);
+  outline: none;
+  border: 3px solid grey;
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.1s;
+}
+.submit-btn {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  transform: scale(1.3);
+  background-color: rgb(140, 218, 25);
+  cursor: pointer;
+  transition-property: transform background-color;
+  transition-duration: 0.15s;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.submit-btn:hover {
+  transform: scale(1.5);
+  background-color: rgb(157, 248, 21);
+  font-size: 1.6rem;
+}
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40rem;
+}
+.reset-btn {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  transform: scale(1.3);
+  background-color: red;
+  cursor: pointer;
+  transition-property: transform background-color;
+  transition-duration: 0.15s;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.reset-btn:hover {
+  transform: scale(1.5);
+  background-color: rgb(248, 98, 98);
+  font-size: 1.6rem;
+}
+
+.input-style:hover {
+  transform: scale(1.6);
+}
+
+.user-parameters {
+  display: flex;
+  width: 100rem;
+  justify-content: space-between;
+}
+.label-input {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.good-luck-p {
+  text-align: center;
+}
+.winning-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.congrats {
+    font-size: 8rem;
+    animation-name: exhale, color-change;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+@keyframes exhale {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes color-change {
+        from {
+            color: pink;
+        }
+        25% {
+            color: purple;
+        }
+        50% {
+            color: green;
+        }
+        75% {
+            color: skyblue;
+        }
+        to {
+            color: pink;
+        }
+}
+.play-again {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    transform: scale(1.3);
+    background-color: violet;
+    cursor: pointer;
+    transition-property: transform background-color;
+    transition-duration: 0.15s;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: white;
+    animation-name: color-me;
+    animation-duration: 3s;
+  }
+  .play-again:hover {
+    transform: scale(1.5);
+    background-color: rgb(243, 38, 243);
+    border-color: rgb(214, 209, 209);
+    font-size: 1.6rem;
+  }
+  @keyframes color-me {
+      from {
+        color: transparent;
+        background-color: transparent;
+        border-color: transparent;
+      }
+      to {
+          color: white;
+          background-color: violet;
+          border-color: transparent;
+      }
+  }
+  .winning-text {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: scale(1.3);
+    transition-property: transform;
+    transition-duration: 0.1s;
+    font-size: 2rem;
+  }

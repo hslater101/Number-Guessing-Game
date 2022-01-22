@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guess That Number!</title>
+  </head>
+  <body class="body-el">
+    <h1 class="main-header">Guess That Number!</h1>
+    <div class="header-div">
+      <p class="header-text"></p>
+      <p class="good-luck-p"></p>
+      <p class="header-text-2">
+        Hello! my name is BB, short for Big Brain! Lets play a fun little game.
+        Your goal is to guess the number that I am thinking of. In fact, I will
+        let you choose all the parameters! Just enter your lowest number, your
+        highest number, and the number of guesses that you would like to have.
+      </p>
+      <p class="header-text-2-pg">Good Luck!</p>
+    </div>
+    <div class="main-div">
+      <main class="game-content">
+        <div class="user-parameters">
+          <div class="label-input">
+            <label for="min-input" class="min-label label-style"
+              >Enter Min Number</label
+            >
+            <input
+              class="input-style"
+              id="min-input"
+              type="number"
+              value="0"
+              required
+            />
+          </div>
+          <div class="label-input">
+            <label for="max-input" class="max-label label-style"
+              >Enter Max Number</label
+            >
+            <input
+              class="input-style"
+              id="max-input"
+              value="100"
+              type="number"
+              required
+            />
+          </div>
+          <div class="label-input">
+            <label for="num-guesses-input" class="num-guesses-label label-style"
+              >Enter The number of guesses</label
+            >
+            <input
+              id="num-guesses-input"
+              required
+              type="number"
+              min="1"
+              value="1"
+              class="input-style"
+            />
+          </div>
+        </div>
+        <p class="bb-text">Enter your parameters to play the game!</p>
+        <p class="bb-hidden-text"></p>
+        <label for="game-input" class="game-label label-style"
+          >Enter your guess</label
+        >
+        <input
+          id="game-input"
+          required
+          type="number"
+          class="input-style"
+          placeholder=""
+        />
+        <div class="btn-div">
+          <button class="submit-btn">Submit</button>
+          <button class="reset-btn">Reset</button>
+        </div>
+        <div class="correct-text"></div>
+        <div class="num-guesses"></div>
+      </main>
+    </div>
+    <div class="winning-div">
+        <h1 class="congrats">Congratulations!</h1>
+        <h2 class="winning-text"></h2>
+        <button class="play-again">Play Again!</button>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
