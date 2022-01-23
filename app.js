@@ -436,7 +436,6 @@ function submit_results() {
       get_num_guesses();
       first_submit = false;
       random_number = get_random_int(min_number_value, max_number_value);
-      console.log(random_number);
       change_display();
       delete_timeout = setTimeout(delete_text, 2000);
       prompt_timeout = setTimeout(prompt_user, 4000);
